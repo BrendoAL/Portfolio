@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-
-// Importe TODOS os componentes standalone que você vai usar
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SobreComponent } from './sobre/sobre.component';
@@ -11,8 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [
     HeaderComponent,
@@ -22,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     ProjetosComponent,
     ContatoComponent,
     FooterComponent
-  ]
+  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {}
-
